@@ -1,0 +1,20 @@
+{% extends 'base/base.html' %}
+{% block start %}
+  <div class="container mt-5 pt-5">
+    <div class="row">
+      {% for product in products %}
+      <div class="col-md-3" style="margin-bottom: 20px;">
+        <figure class="card card-product-grid" style="height: 100%; display: flex; flex-direction: column; justify-content: space-between;">
+          <div class="img-wrap" style="overflow: hidden; height: 200px; display: flex; justify-content: center; align-items: center;">
+            <img src="/media/{{product.product_images.first.image}}"/>
+          </div>
+          <figcaption class="info-wrap border-top" style="flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+            <a href="{% url 'get_product' product.slug %}" class="title" style="font-size: 16px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"><b>{{product.product_name}}</b></a>
+            <div class="price mt-2" style="margin-top: auto;">${{product.price}}.00</div> <!-- price-wrap.// -->
+          </figcaption>
+        </figure> <!-- card //  -->
+      </div> <!-- col.// -->
+      {% endfor %}
+    </div>
+  </div>
+{% endblock %}
