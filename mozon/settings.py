@@ -141,12 +141,12 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'sambhavvinayak123@gmail.com'
-EMAIL_HOST_PASSWORD = 'tqlm bzau amdn rqau'
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
 
 # tqlm bzau amdn rqau
 
 
 
-razor_pay_key_id = 'rzp_test_TJ7ae4pei3dtxh'
-razor_pay_secrete_key = 'V621u8zFje4vxpCPQOv3noT6'
+razor_pay_key_id = ''
+razor_pay_secrete_key = ''
