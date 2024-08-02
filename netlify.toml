@@ -1,0 +1,12 @@
+[build]
+  base = ""
+  publish = "static"
+  command = "python manage.py collectstatic --noinput"
+
+[context.production.environment]
+  DJANGO_SETTINGS_MODULE = "your_project.settings.production"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
