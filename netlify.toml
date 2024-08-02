@@ -4,7 +4,7 @@
   command = "python manage.py collectstatic --noinput"
 
 [context.production.environment]
-  DJANGO_SETTINGS_MODULE = "your_project.settings.production"
+  DJANGO_SETTINGS_MODULE = "mozon.settings.production"
 
 [[redirects]]
   from = "/*"
