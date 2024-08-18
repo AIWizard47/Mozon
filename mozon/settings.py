@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-n#d&rv-8qy*)qduvkwutxj$%vzn^p3v@z3p@evaf^h8ut7xr#(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['/','https://mozon-beta.netlify.app/']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
